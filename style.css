@@ -360,7 +360,14 @@ hr{
 
 footer {
     text-align: center;
-  }
+    line-height: 1.2;
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+  
+
+
+    
 
 @media only screen and (max-width:770px){
     #header{
@@ -444,6 +451,14 @@ footer {
 
     .contact-right-col img{
         width: 100%;
+    }
+
+    .btn-box {
+        width: 100%;
+        display: flex;
+        justify-self: space-between;
+        gap: 14px;
+        
     }
 
     .btn-box common-btn {

@@ -377,6 +377,10 @@ hr{
     .header-text {
         margin-top: 100px;
     }
+
+    .header-text p{
+        line-height: 1.2;
+    }
     
     h1 {
         font-size: 25px;

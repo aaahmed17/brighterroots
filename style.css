@@ -352,10 +352,6 @@ hr{
     flex-wrap: wrap;
 }
 
-.footer-content {
-    flex-basis: 50%;
-}
-
 .footer-contact i { 
     color: #2f4f4f;
     margin-right: 8px;

@@ -334,7 +334,10 @@ form textarea{
 
 /*---footer---*/
 #footer{
-    padding: 50px 0 100px;
+    background-color: #fdf8f2;
+    padding: 30px 5%;
+    font-family: 'Lato', sans-serif;
+    color: #2f4f4f;
 }
 
 hr{
@@ -349,14 +352,15 @@ hr{
     flex-wrap: wrap;
 }
 
-.footer-left-col {
+.footer-content {
     flex-basis: 50%;
 }
 
-
-.footer-right-col {
-    flex-basis: 50%;
-}
+.footer-contact i { 
+    color: #2f4f4f;
+    margin-right: 8px;
+  }
+  
 
 footer {
     text-align: center;
@@ -496,9 +500,14 @@ footer {
         max-height: 300px;
         font-size: 20px;
     }
-    .footer-left-col, .footer-right-col {
+    .footer-left-col{
         flex-basis: 100%;
     }
+
+    .footer-contact i { 
+        color: #2f4f4f;
+        margin-right: 8px;
+      }
     .link-title{
         flex-basis: 50%;
         margin-bottom: 30px;

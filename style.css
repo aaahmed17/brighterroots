@@ -186,6 +186,11 @@ nav ul li a {
     display: inline-block;
 }
 
+.team-text h1 {
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
 .team-text p {
     font-size: 23px;
     line-height: 1.8;
@@ -421,12 +426,12 @@ footer p{
     .about-left-col, .about-right-col {
         flex-basis: 100%;
     }
-    .about-text {
+    .about-text, .team-text {
         margin: 50px 50px 0;
         display: inline-block;
         
     }
-    .about-text h1 {
+    .about-text, .team-text h1 {
         font-size: 28px;
     
     }

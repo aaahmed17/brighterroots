@@ -166,6 +166,7 @@ nav ul li a {
     margin-left: 100px;
     display: inline-block;
     
+    
 }
 .about-text h1 {
     font-size: 40px;
@@ -433,11 +434,13 @@ footer p{
     }
     .about-text h1 {
         font-size: 28px;
+        text-align: center;
     
     }
 
     .team-text h1 {
         font-size: 28px;
+        text-align: center;
     
     }
     .about-left-col img {

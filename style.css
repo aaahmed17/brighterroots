@@ -364,12 +364,14 @@ hr{
 
 footer {
     text-align: center;
+}
+  
+footer p{
     line-height: 1.2;
     font-family: 'Nunito', sans-serif;
     color: #2f4f4f;
+    font-size: 15px;
 }
-  
-
 
     
 

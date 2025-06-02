@@ -74,19 +74,35 @@
             <span class="square"></span>
             <br>
             <br>
-            <p>At Brighter Roots Youth Services, we believe every 
-                young person deserves a space where they are 
-                <span class="highlight">seen, heard and supported</span>. 
-                We provide safe, nurturing environments for children and youth ages 5 to 17 
-                to heal from trauma, express themselves freely
-                and grow into their strongest selves. Rooted in 
-                compassion, creativity and community, our programs 
-                are designed to empower resilience and unlock 
-                potential helping each child not just to survive, 
-                but to thrive.
+            <p>Brighter Roots Youth Services was founded by three friends from diverse 
+                backgrounds who shared a common passion and goal: supporting children and youth 
+                in meaningful, lasting ways. Through their work in various fields, they 
+                recognized a growing need for safe, inclusive spaces where young people 
+                could receive trauma-informed care, guidance through life’s challenges
+                and encouragement to build self-love and practical life skills. So, they 
+                came together to create exactly that.
               </p>
+              <br>
+        </div>   
+        <div class="team-text">
+            <h1><b>Team</b></h1>
+            <br>
+            <span class="square"></span>
+            <br>
+            <br>
+            <p>Our team is filled with dedicated professionals with extensive experience 
+                supporting children and youth who have faced trauma, mental health, 
+                behavioural and substance usage challenges and involvement with the youth 
+                justice system. We specialize in providing rehabilitation resources and support 
+                for children and youths who are in the care of Family and Children Services
+                including those living in group homes. Our team also collaborates closely with 
+                families, clinicians, and Family and Children’s Services to support effective care 
+                planning and ensure continuity of care for children and youth.
+              </p>
+              <br>
+              
             
-        </div>    
+        </div>   
     </div>
 </section>
 
@@ -99,9 +115,11 @@
             <h2>Purpose</h2>
             <br>
             <p>
-            To champion the unique journeys of children and youth 
-            by offering spaces that foster growth, trust and a sense 
-            of belonging.   
+                To provide a safe and nurturing environment for children 
+                and youth aged 5 to 17. We provide a structured living space 
+                that fosters a sense of community. Our goal is to celebrate all 
+                accomplishments while motivating and guiding children and youth 
+                throughout various and at times difficult transitions.
             </p>
         </div>    
         <div class="mission">
@@ -109,9 +127,11 @@
             <h2>Mission</h2>
             <br>
             <p>
-            To design meaningful experiences that ignite curiosity, 
-            encourage expression and build the inner strength needed
-             to navigate life’s challenges.   
+            To nurture resilience, self-expression and personal growth in 
+            children and youth who are having challenges. We want to help 
+            them discover their own inner strength and to believe in their future.
+            We strive to provide the tools and support needed to work through
+            those challenges and provide the life skills needed for independence.
             </p>
         </div>    
         <div class="vision">
@@ -119,9 +139,12 @@
             <h2>Vision</h2>
             <br>
             <p>
-            A world where every young person is rooted in confidence,
-            connected to opportunity and equipped to shape a brighter
-            future. 
+            We imagine a world where every young person feels seen, heard and supported, 
+            empowering them to grow into their fullest selves. Like trees with strong roots
+            and bright branches, we believe they are full of potential and possibility. 
+            As an inclusive organization, we welcome and support children and youth from 
+            all walks of life, with a vision to provide a safe environment where they can 
+            truly thrive. 
             </p>
         </div>
 
@@ -135,16 +158,15 @@
             <h1><b>Get In Touch</b></h1>
             <br>
             <span class="square"></span>
-            <form action="https://formspree.io/f/xgvyekag" method="POST">
-                <input type="text" placeholder="First Name*" required minlength="2" pattern=".{2,}" title="Please enter first name.">
-                <input type="text" placeholder="Last Name*" required minlength="2" pattern=".{2,}" title="Please enter last name.">
-                <input type="email" name="email" placeholder="Email Address*" autocomplete="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g. name@example.com)" required>
-                <input type="tel" name="phone" placeholder="Phone Number*" required minlength="2" pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" title="Please enter a valid phone number.">
+            <form id="contactForm" action="https://formspree.io/f/xgvyekag" method="POST" novalidate>
+                <input type="text" name="First Name:" placeholder="First Name*" required minlength="2">
+                <input type="text" name="Last Name:" placeholder="Last Name*" required minlength="2">
+                <input type="email" name="Email:" placeholder="Email Address*" required>
+                <input type="tel" name="Phone:" id="phone" placeholder="Phone Number*" required >
                 <textarea placeholder="Write your message here ..."></textarea>
                 <div class="btn-box">
                     <button class="common-btn">SEND MESSAGE</button>
                     <button class="common-btn" type="reset">RESET</button>
-
                 </div>
             </form>
         </div>
@@ -183,6 +205,45 @@
             }
         }
         var scroll = new SmoothScroll('a[href*="#"]');
+        
+        const form = document.getElementById("contactForm");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+
+        // Custom message for email
+        email.addEventListener("invalid", function (e) {
+            e.target.setCustomValidity("");
+
+            if (!e.target.validity.valid) {
+            if (e.target.validity.valueMissing) {
+                e.target.setCustomValidity("Please enter your email address.");
+            } else {
+                e.target.setCustomValidity("Please enter a valid email (e.g. name@example.com).");
+            }
+            }
+        });
+
+        email.addEventListener("input", function (e) {
+            e.target.setCustomValidity("");
+        });
+
+        // Custom message for phone
+        phone.addEventListener("invalid", function (e) {
+            e.target.setCustomValidity("");
+
+            if (!e.target.validity.valid) {
+            if (e.target.validity.valueMissing) {
+                e.target.setCustomValidity("Please enter your phone number.");
+            } else {
+                e.target.setCustomValidity("Phone format must be (123) 456-7890.");
+            }
+            }
+        });
+
+        phone.addEventListener("input", function (e) {
+            e.target.setCustomValidity("");
+        });
+
     </script>    
     <!-- Bootstrap JS, jQuery, and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

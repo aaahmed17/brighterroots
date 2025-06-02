@@ -319,6 +319,7 @@ form textarea{
     width: 100%;
     display: flex;
     justify-self: space-between;
+    gap: 14px;
     
 }
 .btn-box common-btn {
@@ -357,9 +358,9 @@ hr{
     flex-basis: 50%;
 }
 
-.copyright {
-    margin-top: 70px;
-}
+footer {
+    text-align: center;
+  }
 
 @media only screen and (max-width:770px){
     #header{
@@ -377,11 +378,9 @@ hr{
     .header-text {
         margin-top: 100px;
     }
-
     .header-text p{
         line-height: 1.2;
     }
-    
     h1 {
         font-size: 25px;
     }

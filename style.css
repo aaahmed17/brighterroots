@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 150px;
+    
+}
+.header-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    color: #2f4f4f;
+
+}
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: rgb(230, 198, 54);
+}
+
+#carouselExampleControls{
+    width: 100%;
+}
+
+.carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Gradient overlay using pseudo-element */
+  .carousel-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+    z-index: 1;
+  }
+  
+  /* Make sure image stays below the gradient */
+  .carousel-image-wrapper img {
+    position: relative;
+    z-index: 0;
+  }
+.common-btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid  rgb(230, 198, 54);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    font-size: 25px;
+    line-height: 18px;
+    color: #777;
+}
+
+.header-text button {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.line-1{
+    width: 15px;
+    height: 15px;
+    background: rgb(230, 198, 54);
+    display: inline-block;
+}
+
+.line-2{
+    width: 80px;
+    height: 1px;
+    background: rgb(230, 198, 54);
+    display: inline-block;
+}
+
+.line-3{
+    width: 60px;
+    height: 1px;
+    background: rgb(230, 198, 54);
+    display: inline-block;
+}
+
+.line{
+    line-height: 8px;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: rgb(230, 198, 54);
+    z-index: 2; 
+    font-size: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
+#menuBtn{
+    width: 50px;
+    position: fixed;    
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+/*---about---*/
+
+#about {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fbeedd;
+    font-family: 'Nunito', sans-serif;
+}
+
+.about-left-col {
+    flex-basis: 50%;
+}
+
+.about-left-col img {
+    width: 100%;
+
+}
+.about-right-col {
+    flex-basis: 50%;
+}
+
+.about-text {
+    max-width: 500px;
+    margin-left: 100px;
+    display: inline-block;
+    
+}
+.about-text h1 {
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+
+}
+.about-text p {
+    font-size: 23px;
+    line-height: 1.8;
+    font-family: 'Nunito', sans-serif;
+    color: #444
+}
+
+.highlight {
+    font-weight: bold;
+    text-decoration: underline dashed rgb(230, 198, 54);
+    text-underline-offset: 4px;
+  }
+  
+/*---features---*/  
+#features{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.feature-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.purpose{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.mission{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.vision{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.purpose img {
+    width: 200px;
+}
+
+.purpose h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+.purpose p {
+    font-size: 23px;
+    line-height: 1.2;
+    font-family: 'Nunito', sans-serif;
+
+}
+ 
+.mission img {
+    width: 230px;
+}
+
+.mission h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+
+.mission p {
+    font-size: 23px;
+    line-height: 1.2;
+    font-family: 'Nunito', sans-serif;
+}
+.vision img {
+    width: 200px;
+}
+
+.vision h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+
+.vision p {
+    font-size: 23px;
+    line-height: 1.2;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*---contact---*/
+#contact {
+    background-color: #fbeedd;
+}
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left-col,.contact-right-col {
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+
+.contact-left-col h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+
+.contact-right-col img{
+    width: 130%;
+}
+
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #2f4f4f;
+    font-size: 15px;
+}
+
+form textarea{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #2f4f4f;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+    font-size: 15px;
+}
+
+.btn-box {
+    width: 100%;
+    display: flex;
+    justify-self: space-between;
+    
+}
+.btn-box common-btn {
+    font-family: 'Nunito', sans-serif;
+    color: #2f4f4f;
+}
+.btn-box button {
+    flex-basis: 48%;
+    padding: 18px 0;
+    border: 2px solid #2f4f4f;
+}
+
+/*---footer---*/
+#footer{
+    padding: 50px 0 100px;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgb(230, 198, 54);
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col {
+    flex-basis: 50%;
+}
+
+
+.footer-right-col {
+    flex-basis: 50%;
+}
+
+.copyright {
+    margin-top: 70px;
+}
+
+@media only screen and (max-width:770px){
+    #header{
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+    .header-text {
+        margin-top: 100px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    
+    
+    }
+    .common-btn{
+        padding: 10px 40px;
+        font-size: 15px;
+        
+    }
+    .about-left-col, .about-right-col {
+        flex-basis: 100%;
+    }
+    .about-text {
+        margin: 50px 50px 0;
+        display: inline-block;
+        
+    }
+    .about-text h1 {
+        font-size: 28px;
+    
+    }
+    .about-left-col img {
+        width: 100%;
+    
+    }
+    .purpose{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .mission{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .vision{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #contact {
+        padding: 50px;
+    }
+    .contact-left-col,.contact-right-col {
+        flex-basis: 100%;
+    }
+
+    .contact-right-col {
+        margin-top: 50px;
+    }
+
+    .contact-left-col h1 {
+        font-family: 'Nunito', sans-serif;
+        color: #2f4f4f;
+        font-size: 28px;
+    }
+
+    .contact-right-col img{
+        width: 100%;
+    }
+
+    .btn-box common-btn {
+        font-family: 'Nunito', sans-serif;
+        color: #2f4f4f;
+    }
+    form{
+        max-width: 350px;
+        margin: 30px 0;
+    }
+    
+    form input{
+        width: 110%;
+        padding: 12px 10px;
+        margin-bottom: 5px;
+        outline: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 2px solid #2f4f4f;
+        font-size: 20px;
+    }
+    
+    form textarea{
+        width: 110%;
+        padding: 12px 10px;
+        margin-bottom: 10px;
+        outline: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: 2px solid #2f4f4f;
+        resize: vertical;
+        min-height: 100px;
+        max-height: 300px;
+        font-size: 20px;
+    }
+    .footer-left-col, .footer-right-col {
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+    
+}

@@ -431,7 +431,12 @@ footer p{
         display: inline-block;
         
     }
-    .about-text, .team-text h1 {
+    .about-text h1 {
+        font-size: 28px;
+    
+    }
+
+    .team-text h1 {
         font-size: 28px;
     
     }

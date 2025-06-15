@@ -204,6 +204,26 @@ nav ul li a {
     text-decoration: underline dashed rgb(230, 198, 54);
     text-underline-offset: 4px;
   }
+
+  .section-title {
+  font-size: 1.8em;
+  color: #2f4f4f;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: 'Nunito', serif;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 4px;
+  width: 50%;
+  background-color: #2f4f4f;
+  border-radius: 2px;
+}
   
 /*---features---*/  
 #features{

@@ -389,7 +389,7 @@ footer {
 footer p{
     line-height: 1.2;
     font-family: 'Nunito', sans-serif;
-    font-size: 11px;
+    font-size: 15px;
 }
 
     
@@ -536,6 +536,12 @@ footer p{
         color: #2f4f4f;
         margin-right: 8px;
       }
+    footer p{
+    line-height: 1.2;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+}
+
     .link-title{
         flex-basis: 50%;
         margin-bottom: 30px;

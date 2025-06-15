@@ -377,6 +377,9 @@ hr{
     margin-right: 8px;
   }
   
+.footer-contact p {
+    font-size: 20px;
+}
 
 footer {
     text-align: center;

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/logo";
 
 const navItems = [
   { label: "Home", target: "home" },
@@ -27,18 +28,10 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => scrollTo("home")}
-          className="group flex items-center gap-3"
+          className="group flex cursor-pointer items-center gap-3 justify-center items-center"
           aria-label="Back to top"
         >
-          <span className="relative size-12 overflow-hidden transition-shadow sm:size-14">
-            <Image
-              src="https://brighterrootsyouthservices.ca/images/logo.jpg"
-              alt="Brighter Roots Youth Services logo"
-              fill
-              sizes="56px"
-              className="object-cover"
-            />
-          </span>
+          <Logo className="flex flex-1 h-[90px]" />
         </button>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">

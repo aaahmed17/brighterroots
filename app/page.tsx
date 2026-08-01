@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BannerCarousel } from "@/components/banner-carousel";
 import { FadeIn } from "@/components/fade-in";
+import { ContactForm } from "@/components/contact-form";
 
 export default function Home() {
   return (
@@ -163,64 +164,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tight text-green-900">
                 Get In Touch
               </h2>
-              <form
-                action="https://formspree.io/f/xgvyekag"
-                method="POST"
-                className="mt-8 flex flex-col gap-4"
-              >
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <input
-                    type="text"
-                    name="First Name:"
-                    placeholder="First Name*"
-                    required
-                    minLength={2}
-                    className="h-11 w-full rounded-lg border border-input bg-card px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
-                  />
-                  <input
-                    type="text"
-                    name="Last Name:"
-                    placeholder="Last Name*"
-                    required
-                    minLength={2}
-                    className="h-11 w-full rounded-lg border border-input bg-card px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
-                  />
-                </div>
-                <input
-                  type="email"
-                  name="Email:"
-                  placeholder="Email Address*"
-                  required
-                  className="h-11 w-full rounded-lg border border-input bg-card px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
-                />
-                <input
-                  type="tel"
-                  name="Phone:"
-                  placeholder="Phone Number*"
-                  required
-                  className="h-11 w-full rounded-lg border border-input bg-card px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
-                />
-                <textarea
-                  name="Message:"
-                  placeholder="Write your message here ..."
-                  rows={5}
-                  className="w-full resize-none rounded-lg border border-input bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
-                />
-                <div className="flex flex-wrap gap-3">
-                  <button
-                    type="submit"
-                    className="inline-flex h-10 items-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md active:translate-y-px"
-                  >
-                    SEND MESSAGE
-                  </button>
-                  <button
-                    type="reset"
-                    className="inline-flex h-10 items-center rounded-full border border-border bg-background px-6 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-                  >
-                    RESET
-                  </button>
-                </div>
-              </form>
+              <ContactForm />
             </div>
             <div className="relative aspect-square overflow-hidden rounded-2xl ring-1 ring-border/60">
               <Image

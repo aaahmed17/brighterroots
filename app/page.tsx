@@ -29,7 +29,7 @@ export default function Home() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="relative aspect-square overflow-hidden rounded-2xl ring-1 ring-border/60">
             <Image
-              src="https://brighterrootsyouthservices.ca/images/br-extract.png"
+              src="/images/team-tree.png"
               alt="Brighter Roots Youth Services team"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="relative size-24">
               <Image
-                src="https://brighterrootsyouthservices.ca/images/purpose%20(2).PNG"
+                src="/images/purpose.png"
                 alt="Purpose icon"
                 fill
                 sizes="96px"
@@ -104,7 +104,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="relative size-24">
               <Image
-                src="https://brighterrootsyouthservices.ca/images/mission_icon1.PNG"
+                src="/images/mission.png"
                 alt="Mission icon"
                 fill
                 sizes="96px"
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="relative size-24">
               <Image
-                src="https://brighterrootsyouthservices.ca/images/vision_icon1.PNG"
+                src="/images/vision.png"
                 alt="Vision icon"
                 fill
                 sizes="96px"
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-2xl ring-1 ring-border/60">
               <Image
-                src="https://brighterrootsyouthservices.ca/images/contact-icon.PNG"
+                src="/images/contact.png"
                 alt="Get in touch with Brighter Roots Youth Services"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

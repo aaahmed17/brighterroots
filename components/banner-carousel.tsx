@@ -6,15 +6,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    src: "https://brighterrootsyouthservices.ca/images/banner1.png",
+    src: "/images/banner1.png",
     alt: "Brighter Roots Youth Services banner 1",
   },
   {
-    src: "https://brighterrootsyouthservices.ca/images/banner2.png",
+    src: "/images/banner2.png",
     alt: "Brighter Roots Youth Services banner 2",
   },
   {
-    src: "https://brighterrootsyouthservices.ca/images/banner3.png",
+    src: "/images/banner3.png",
     alt: "Brighter Roots Youth Services banner 3",
   },
 ];

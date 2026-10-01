@@ -38,29 +38,26 @@ export default function ContactPage() {
 
       <FadeIn>
         <section className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-24 sm:px-6 lg:px-8">
-          <article className="overflow-hidden rounded-2xl bg-[#faf6ef] ring-1 ring-border/70">
-            <div className="grid lg:grid-cols-2 lg:items-center">
-              <div className="p-6 sm:p-8 lg:p-10">
-                <div className="flex items-center gap-2">
-                  <Leaf className="size-4 text-green-800" aria-hidden />
-                  <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-green-900 sm:text-3xl">
-                    Get In Touch
-                  </h2>
-                </div>
-                <WavyUnderline className="mt-2 h-2 w-20 text-primary" />
-                <ContactForm className="mt-6" />
+          <article className="relative overflow-hidden rounded-2xl bg-[#faf6ef] ring-1 ring-border/70">
+            <div className="relative z-10 p-6 sm:p-8 lg:w-1/2 lg:p-10">
+              <div className="flex items-center gap-2">
+                <Leaf className="size-4 text-green-800" aria-hidden />
+                <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-green-900 sm:text-3xl">
+                  Get In Touch
+                </h2>
               </div>
-              <div className="flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                <Image
-                  src="/images/contact.png"
-                  alt="Illustration of people connecting and communicating"
-                  width={1024}
-                  height={1016}
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="h-auto w-full"
-                  priority
-                />
-              </div>
+              <WavyUnderline className="mt-2 h-2 w-20 text-primary" />
+              <ContactForm className="mt-6" />
+            </div>
+            <div className="relative min-h-[280px] w-full sm:min-h-[360px] lg:absolute lg:inset-y-0 lg:right-0 lg:min-h-0 lg:w-1/2">
+              <Image
+                src="/images/contact-desk.png"
+                alt="Bright workspace with plants, laptop, and Brighter Roots artwork"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center"
+                priority
+              />
             </div>
           </article>
         </section>

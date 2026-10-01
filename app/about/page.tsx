@@ -169,7 +169,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-16 text-center">
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex h-11 items-center rounded-full bg-primary px-8 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90"
             >
               Get In Touch

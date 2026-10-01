@@ -18,7 +18,7 @@ export function ServiceCard({ service }: { service: Service }) {
           {service.description}
         </p>
         <Link
-          href="/#contact"
+          href="/contact"
           className="mt-4 inline-flex w-fit items-center gap-1 text-sm font-semibold text-green-900 transition hover:text-primary"
         >
           Ask about this service

@@ -1,13 +1,24 @@
 "use client";
 
 import { useForm, ValidationError } from "@formspree/react";
+import { Send } from "lucide-react";
+import { FORMSPREE_FORM_ID } from "@/lib/formspree";
+import { cn } from "@/lib/utils";
 
-export function ContactForm() {
-  const [state, handleSubmit] = useForm("xgvyekag");
+export function ContactForm({ className }: { className?: string }) {
+  const [state, handleSubmit] = useForm(FORMSPREE_FORM_ID);
+
+  const inputClasses =
+    "h-11 w-full rounded-lg border border-input bg-background px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none";
 
   if (state.succeeded) {
     return (
-      <div className="mt-8 rounded-xl border border-border bg-card p-6 text-center">
+      <div
+        className={cn(
+          "rounded-xl border border-border bg-background p-6 text-center",
+          className,
+        )}
+      >
         <p className="text-lg font-semibold text-green-900">
           Thanks for your submission!
         </p>
@@ -18,11 +29,11 @@ export function ContactForm() {
     );
   }
 
-  const inputClasses =
-    "h-11 w-full rounded-lg border border-input bg-card px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none";
-
   return (
-    <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">
+    <form
+      onSubmit={handleSubmit}
+      className={cn("flex flex-col gap-4", className)}
+    >
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <input
@@ -72,9 +83,9 @@ export function ContactForm() {
       <div>
         <textarea
           name="Message:"
-          placeholder="Write your message here ..."
+          placeholder="Write your message here..."
           rows={5}
-          className="w-full resize-none rounded-lg border border-input bg-card px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
+          className="w-full resize-none rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/50 focus:outline-none"
         />
         <ValidationError
           prefix="Message"
@@ -83,19 +94,20 @@ export function ContactForm() {
           className="mt-1 block text-xs font-medium text-destructive"
         />
       </div>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 pt-1">
         <button
           type="submit"
           disabled={state.submitting}
-          className="inline-flex h-10 items-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md active:translate-y-px disabled:pointer-events-none disabled:opacity-50"
+          className="inline-flex h-11 items-center gap-2 rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md active:translate-y-px disabled:pointer-events-none disabled:opacity-50"
         >
-          {state.submitting ? "SENDING..." : "SEND MESSAGE"}
+          {state.submitting ? "Sending..." : "Send Message"}
+          <Send className="size-4" aria-hidden />
         </button>
         <button
           type="reset"
-          className="inline-flex h-10 items-center rounded-full border border-border bg-background px-6 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
+          className="inline-flex h-11 items-center rounded-full border border-border bg-background px-6 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
         >
-          RESET
+          Reset
         </button>
       </div>
       {state.errors && !state.succeeded && (

@@ -10,9 +10,10 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Our Goal", href: "/#goal" },
+  { label: "Our Goal", href: "/goal" },
   { label: "Services", href: "/services" },
-  { label: "Contact Us", href: "/#contact" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 function NavLink({
@@ -71,7 +72,7 @@ export function SiteHeader() {
             <NavLink key={item.label} href={item.href} label={item.label} />
           ))}
           <Link
-            href="/#contact"
+            href="/contact"
             className="ml-3 inline-flex h-10 items-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md active:translate-y-px"
           >
             Get In Touch
@@ -107,7 +108,7 @@ export function SiteHeader() {
             ))}
           </ul>
           <Link
-            href="/#contact"
+            href="/contact"
             onClick={close}
             className="mt-2 flex h-10 w-full items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
           >

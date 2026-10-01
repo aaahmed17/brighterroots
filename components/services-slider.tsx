@@ -103,7 +103,7 @@ export function ServicesSlider() {
                         {service.description}
                       </p>
                       <Link
-                        href="/#contact"
+                        href="/contact"
                         className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-green-900 underline-offset-4 transition hover:text-primary hover:underline"
                       >
                         Ask about this service

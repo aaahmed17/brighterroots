@@ -81,7 +81,7 @@ export default function ServicesPage() {
               Together, we create strong roots and brighter futures.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               className="mt-6 inline-flex h-11 items-center rounded-full bg-green-900 px-8 text-sm font-semibold text-white transition hover:bg-green-800"
             >
               Get in Touch

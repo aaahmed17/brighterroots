@@ -43,7 +43,7 @@ const idealCandidate = [
 const qualifications = [
   "Relevant experience or education in Child & Youth Care, Social Service Worker, Social Work, Psychology, or Human Services",
   "Valid First Aid/CPR certification (or willingness to obtain)",
-  "Vulnerable Sector Check (or willingness to obtain)",
+  "Broad Record Check (or willingness to obtain)",
 ];
 
 export default function CareersPage() {
@@ -52,6 +52,7 @@ export default function CareersPage() {
       <FadeIn>
         <section className="mx-auto max-w-3xl px-4 pt-14 pb-10 text-center sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-2">
+            <Leaf className="size-5 text-green-800" aria-hidden />
             <h1 className="font-[family-name:var(--font-heading)] text-4xl font-semibold tracking-tight text-green-900 sm:text-5xl">
               Careers
             </h1>
@@ -122,7 +123,7 @@ export default function CareersPage() {
                   </span>
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-[#fcdeb8]/80 px-3 py-1 text-xs font-medium text-green-900">
                     <Briefcase className="size-3.5 text-primary" aria-hidden />
-                    Sub-Contractor
+                    Independent Contractor
                   </span>
                 </div>
                 <p className="mt-5 text-sm leading-relaxed text-foreground/85 sm:text-base">

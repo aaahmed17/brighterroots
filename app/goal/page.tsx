@@ -1,3 +1,4 @@
+import { WavyUnderline } from "@/components/wavy-underline";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Eye, Leaf, Sprout, Star } from "lucide-react";
@@ -54,8 +55,8 @@ export default function GoalPage() {
             </h1>
             <Leaf className="size-5 text-green-800" aria-hidden />
           </div>
-          <div className="mx-auto mt-4 h-1 w-14 rounded-full bg-primary" />
-          <p className="mt-6 text-balance text-center font-semibold text-xl text-green-800/95 sm:text-2xl">
+          <WavyUnderline />
+          <p className="mt-5 font-[family-name:var(--font-heading)] text-xl text-green-800/95 sm:text-2xl">
             Building Strong Roots, Creating Brighter Futures
           </p>
           <p className="mt-8 text-base leading-relaxed text-foreground/85 sm:text-lg">

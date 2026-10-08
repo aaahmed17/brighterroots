@@ -22,10 +22,11 @@ export default function ContactPage() {
             </h1>
             <Leaf className="size-5 text-green-800" aria-hidden />
           </div>
+          <WavyUnderline />
           <p className="mt-5 font-[family-name:var(--font-heading)] text-xl text-green-800/95 sm:text-2xl">
             We&apos;re Here to Connect
           </p>
-          <WavyUnderline />
+          
           <p className="mt-6 text-base leading-relaxed text-foreground/85 sm:text-lg">
             Have questions? We&apos;d love to hear from you. Whether you&apos;re
             a family, community partner, professional or prospective team member,

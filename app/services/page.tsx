@@ -1,3 +1,4 @@
+import { WavyUnderline } from "@/components/wavy-underline";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +9,7 @@ import { ServicesListing } from "@/components/services-listing";
 export const metadata: Metadata = {
   title: "Our Services | Brighter Roots Youth Services",
   description:
-    "Staffing support, supervised visits, respite, community living, sensory spaces, and more.",
+    "Staffing support, supervised visits, respite, community living, sensory spaces and more.",
 };
 
 export default function ServicesPage() {
@@ -21,9 +22,10 @@ export default function ServicesPage() {
             <h1 className="font-[family-name:var(--font-heading)] text-4xl font-semibold tracking-tight text-green-900 sm:text-5xl">
               Our Services
             </h1>
-            <Leaf className="size-5 text-green-800" aria-hidden />
+            <Heart className="size-4 fill-primary text-primary" aria-hidden />
           </div>
-          <p className="mt-3 text-lg text-muted-foreground">
+          <WavyUnderline />
+          <p className="mt-5 font-[family-name:var(--font-heading)] text-xl text-green-800/95 sm:text-2xl">
             Support that nurtures. Care that empowers.
           </p>
           <p className="mt-8 text-base leading-relaxed text-foreground/85 sm:text-lg">
@@ -38,11 +40,9 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="mx-auto max-w-3xl px-4 pb-10 text-center sm:px-6">
           <div className="flex items-center justify-center gap-2">
-            <Sparkles className="size-4 text-primary" aria-hidden />
             <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-green-900 sm:text-3xl">
               How We Support
-            </h2>
-            <Leaf className="size-4 text-green-800" aria-hidden />
+            </h2>   
           </div>
           <p className="mt-4 leading-relaxed text-foreground/85">
             <span className="md:hidden">

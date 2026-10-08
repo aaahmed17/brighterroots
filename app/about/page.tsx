@@ -1,3 +1,4 @@
+import { WavyUnderline } from "@/components/wavy-underline";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -66,16 +67,17 @@ export default function AboutPage() {
       <FadeIn>
         <section className="mx-auto max-w-4xl px-4 pt-14 pb-10 text-center sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-3">
-            <Leaf className="size-5 text-green-800" aria-hidden />
+            <Heart className="size-4 fill-primary text-primary" aria-hidden />
             <h1 className="font-[family-name:var(--font-heading)] text-4xl font-semibold tracking-tight text-green-900 sm:text-5xl">
               About Us
             </h1>
-            <Leaf className="size-5 text-green-800" aria-hidden />
+            <Heart className="size-4 fill-primary text-primary" aria-hidden />
           </div>
+          <WavyUnderline />
           <p className="mt-4 font-[family-name:var(--font-heading)] text-xl text-green-800/90 sm:text-2xl">
             Rooted in Purpose, Growing Together
           </p>
-          <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-primary" />
+      
           <p className="mt-8 text-base leading-relaxed text-foreground/85 sm:text-lg">
             Brighter Roots Youth Services was founded by three friends from
             diverse backgrounds who shared a common passion and purpose: to
